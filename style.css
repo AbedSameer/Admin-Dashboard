@@ -31,6 +31,11 @@ html{
     outline: 0;
     font-family: poppins, sans-serif;
 }
+
+#recrnt-ordrs {
+    padding-bottom: 20px;
+    position: relative;
+}
 html{
     width: 100vw;
 }
@@ -274,12 +279,14 @@ a#show-all{
     color:
     var(--theme-color);
     text-decoration: none;
-    bottom: 31px;
+    bottom: 0px;
     text-align: center;
     left:50%;
     transform: translate(-50%,100%);
 }
-
+#borger-menu{
+    display: none;
+}
 /*/////////// #right-section  //////////////////////*/
 #right-section{
     /* padding: 0px 0px 20px 20px; */
@@ -513,11 +520,35 @@ $container-max-widths: (
 }
 body>#main{
     height: auto;
+    margin-top: 60px;
 }
 .main-section:nth-child(2){
     flex-direction: column;
 }
 .main-section:nth-child(2) .analyitic{
     width: 90%;
+}
+#borger-menu{
+   display: revert;
+   position: fixed;
+   left: 20px;
+   top: 14px;
+}#borger-menu span{
+    font-size: 35px;
+    color: black;
+}
+#user-info{
+    display: none;
+}
+#control-unit{
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #FFF;
+    width:100vw;
+    top: 0;
+    position: fixed;
+    right: 0;
+    padding: 10px;
 }
 }
