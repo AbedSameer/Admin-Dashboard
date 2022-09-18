@@ -171,15 +171,16 @@ position: absolute;
 /*************************** Left Section *****************************/
 
 #left-section {
-  position: absolute;
+  position: fixed;
   display: grid;
   grid-template-rows: 1.3fr repeat(9, 3.7rem) 3fr;
   width: clamp(20px, 17%, 250px);
   width: 50%;
-  height: 70vh;
+  height: 100vh;
   background-color: var(--bg-color);
   left: -60%;
   transition-duration: 0.3s;
+  z-index: 100;
 }
 
 #pages-links {
@@ -226,11 +227,12 @@ position: absolute;
 }
 
 #left-section h3 #msgs-number {
-  position: absolute;
+  /* position: absolute; */
   /* right: -50% */
   background-color: #fa7882;
   padding: 2px 5px;
   border-radius: 5px;
+  margin-left: 5px;
   color: var(--white-color);
   transform: translateX(10px);
 }
@@ -604,6 +606,9 @@ position: unset;
     #logo-name {
     display: block;
     }
+ #left-section {
+   min-width: 180px;
+ }
 
     #left-section .page-link {
     display: block;
