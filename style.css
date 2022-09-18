@@ -373,6 +373,9 @@ th {
   width: 30%;
 }
 
+.product-more,.product-name{
+  display: none;
+}
 .warning {
   color: #ffbb55;
   font-weight: 500;
@@ -595,6 +598,10 @@ position: unset;
     grid-row: 2/3;
     grid-column: 2/4;
   }
+
+  .product-more,.product-name{
+  display: table-cell;
+}
 }
 
 @media (min-width: 1200px) {
