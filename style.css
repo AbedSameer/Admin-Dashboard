@@ -568,6 +568,7 @@ a#show-all {
 
   #main {
     margin-top: 1rem;
+    height: min-content;
   }
 
   #control-unit {
@@ -607,8 +608,8 @@ position: unset;
 @media (min-width: 1200px) {
     #root{
             grid-template-columns: auto 3fr 1fr;
-            grid-template-rows: 1fr 1fr;
-/*             height: 100vh; */
+            grid-template-rows: auto 1fr;
+            /*             height: 100vh; */
     }
     #logo-name {
     display: block;
